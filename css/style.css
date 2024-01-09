@@ -154,3 +154,50 @@ footer{
 
 
 /* responsive */
+
+@media screen and (min-width: 576px){
+    body{
+        background-color: red;
+    }
+
+    .container-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: calc(100% / 3 - 20px);
+        flex-grow: 1;
+    }
+
+    .card.large {
+        width: calc(100% / 3 * 2 - 12px);
+
+    }
+
+    .container-tiles{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tile{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .container-about-us{
+       flex-direction: row;
+    }
+    
+    .col-text{
+        width: 60%;
+
+    }
+    
+    .col-img{
+        width: 40%;
+        
+    }
+
+
+    
+}
