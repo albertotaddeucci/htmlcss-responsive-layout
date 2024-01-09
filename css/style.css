@@ -8,6 +8,13 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5em;
+}
 /* utility class */
 
 .padding-sides{
@@ -28,6 +35,20 @@ body{
     color: black;    
     
 }
+
+.button-blu{
+    padding: 10px 46px 10px;
+
+    border-radius: 30px;
+
+    background-color: #0084fd;
+
+    font-weight: 700;
+    color: white;  
+
+}
+
+
 
 /* navbar */
 
@@ -67,16 +88,47 @@ nav{
 }
 
 .card {
+
+    padding: 20px 20px 0px;
+    
+    text-align: center;
+
+    border-radius: 15px;
     background-color: #b5ddff ;
 
-    /* test */
-    height: 360px;
     
 }
+
+.card-icon{
+    margin-bottom: 22px;
+    
+    font-size: 4em;
+    color: #0084fd;
+}
+
+.card h3{
+    margin-bottom: 40px;
+
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #0084fd;
+}
+
+.card p{
+    margin-bottom: 40px;
+
+    font-weight: bold;
+    color: #5a6e7f;
+}
+
 
 .card.large {
     display: flex;
     flex-direction: column;
+
+    padding: 40px 30px 0px;
+
+    text-align: left;
     
 
     /* test */
@@ -85,20 +137,23 @@ nav{
 }
 
 .card-left{
-    
-
-    /* test */
-    border: 1px solid red;
     flex-grow: 1;
     
+    margin-bottom: 40px;
 }
 
-.card-right{
-    
 
-    /* test */
-    border: 1px solid red;
+
+
+
+.card-right{
     flex-grow: 1;
+
+}
+
+.card-right img{
+    display: block;
+    width: 100%;
 }
 
 /* section planning */
@@ -220,21 +275,19 @@ footer{
     }
 
     .card{
-        /* width: calc(100% / 3 - 20px); */
         width: calc(100% / 3 - 20px / 3 * 2);
-        /* flex-grow: 1; */
+        
     }
 
     .card.large {
-        /* width: calc(100% / 3 * 2 - 20px); */
-        width: calc(100% / 3 * 2 - 20px);
+       width: calc(100% / 3 * 2 - 20px);
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
     }
     .card-left{
-        width: 50%;
+        width: 100%;
 
     }
     
@@ -271,6 +324,26 @@ footer{
 }
 
 @media screen and (min-width: 992px) {
+    
+    .card.large {
+        /* width: calc(100% / 3 * 2 - 20px); */
+        width: calc(100% / 3 * 2 - 20px);
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+    .card-left{
+        width: 60%;
+
+    }
+    
+    .card-right{
+        width: 40%;
+        align-self: flex-end;    
+       
+    }
 
     /* navbar - hamburger icon to links */
 
@@ -280,7 +353,7 @@ footer{
     
     .container-link ul{
         display: flex;
-        gap: 30px;
+        gap: 50px;
         list-style: none;
         
     }
