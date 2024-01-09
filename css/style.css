@@ -15,6 +15,10 @@ a{
 p{
     line-height: 1.5em;
 }
+
+img{
+    width: 100%;
+    display: block;}
 /* utility class */
 
 .padding-sides{
@@ -46,6 +50,10 @@ p{
     font-weight: 700;
     color: white;  
 
+}
+
+.button-circle{
+    background-color: #9792e4;
 }
 
 
@@ -143,18 +151,11 @@ nav{
 }
 
 
-
-
-
 .card-right{
     flex-grow: 1;
 
 }
 
-.card-right img{
-    display: block;
-    width: 100%;
-}
 
 /* section planning */
 
@@ -166,15 +167,42 @@ nav{
 .container-planning{
     display: flex;
     flex-direction: column;
-
     
 }
 
-.container-planning .col{
-    height: 614px;
+.container-planning .col-left{
+   
+    color: white;
+}
 
-    /* test */
-    border: 1px solid black;
+.container-planning .col-left h2{
+    padding-block: 84px 52px;
+
+    font-size: 2em;
+}
+
+.container-planning .col-left p{
+    margin-bottom: 38px;
+}
+
+.container-planning .col-right{
+    padding: 34px 20px;
+
+    border-radius: 50px;
+
+    background-color: white;
+    text-align: center;
+}
+
+.container-planning .col-right h2{
+    padding-block: 26px;
+
+}
+
+.container-planning .col-right p{
+    font-style: italic;
+    margin-bottom: 40px;
+    
 }
 
 
@@ -267,7 +295,7 @@ footer{
 
 @media screen and (min-width: 768px){
 
-    
+    /* section card - tiles expand */
    
     .container-cards{
         flex-direction: row;
@@ -325,28 +353,9 @@ footer{
 
 @media screen and (min-width: 992px) {
     
-    .card.large {
-        /* width: calc(100% / 3 * 2 - 20px); */
-        width: calc(100% / 3 * 2 - 20px);
-
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-    }
-    .card-left{
-        width: 60%;
-
-    }
     
-    .card-right{
-        width: 40%;
-        align-self: flex-end;    
-       
-    }
-
     /* navbar - hamburger icon to links */
-
+    
     .container-link span{
         display: none;
     }
@@ -366,16 +375,49 @@ footer{
     .container-link a.button {
         color: black;
     }
+    
+    /* section card - tiles expand */
 
+    .card.large {
+        /* width: calc(100% / 3 * 2 - 20px); */
+        width: calc(100% / 3 * 2 - 20px);
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+    .card-left{
+        width: 60%;
+
+    }
+    
+    .card-right{
+        width: 40%;
+        align-self: flex-end;    
+       
+    }
+    
+    /* section planning */
     
     .container-planning{
         display: flex;
         flex-direction: row;
+        gap: 70px;
             
     }
     
-    .container-planning .col{
+    .container-planning .col-left{
         width: 50%;
+        
+    }
+    .container-planning .col-right{
+        width: 50%;
+        align-self: flex-end;
+
+        
+    }
+    .container-planning .col-right img{
         
     }
 
