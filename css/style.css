@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 /* utility class */
 
 .padding-sides{
-    padding-inline: 20px;
+    padding-inline: 30px;
 }
 
 .wrapper{
@@ -15,20 +19,40 @@
     margin-inline: auto;
 }
 
+.button{
+    padding: 10px 18px 10px;
+
+    border-radius: 30px;
+
+    background-color: white;
+    color: black;    
+    
+}
+
 /* navbar */
 
 nav{
     background-color: #0084fd;
 
-    /* test */
-    height: 60px;
 }
 
 .container-nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    padding-block: 10px;
+    padding-block: 28px;
+}
+
+
+.container-link span{
+    
+    color: white;
+    font-size: 1.5em;
+}
+
+.container-link ul{
+    display: none;
 }
 
 /* section cards */
@@ -187,6 +211,8 @@ footer{
 /* responsive */
 
 @media screen and (min-width: 768px){
+
+    
    
     .container-cards{
         flex-direction: row;
@@ -194,12 +220,17 @@ footer{
     }
 
     .card{
-        width: calc(100% / 3 - 20px);
-        flex-grow: 1;
+        /* width: calc(100% / 3 - 20px); */
+        width: calc(100% / 3 - 20px / 3 * 2);
+        /* flex-grow: 1; */
     }
 
     .card.large {
-        width: calc(100% / 3 * 2 - 12px);
+        /* width: calc(100% / 3 * 2 - 20px); */
+        width: calc(100% / 3 * 2 - 20px);
+
+        display: flex;
+        flex-direction: row;
 
     }
     .card-left{
@@ -208,14 +239,10 @@ footer{
     }
     
     .card-right{
-        width: 50%;
-    
+        width: 50%;    
        
     }
-    .card.large{
-        display: flex;
-        flex-direction: row;
-    }
+    
 
     .container-tiles{
         flex-direction: row;
@@ -244,6 +271,28 @@ footer{
 }
 
 @media screen and (min-width: 992px) {
+
+    /* navbar - hamburger icon to links */
+
+    .container-link span{
+        display: none;
+    }
+    
+    .container-link ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        
+    }
+    
+    .container-link li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .container-link a.button {
+        color: black;
+    }
 
     
     .container-planning{
