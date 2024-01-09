@@ -10,6 +10,11 @@
     padding-inline: 20px;
 }
 
+.wrapper{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 /* navbar */
 
 nav{
@@ -45,6 +50,32 @@ nav{
     
 }
 
+.card.large {
+    display: flex;
+    flex-direction: column;
+    
+
+    /* test */
+    flex-grow: 1;
+    
+}
+
+.card-left{
+    
+
+    /* test */
+    border: 1px solid red;
+    flex-grow: 1;
+    
+}
+
+.card-right{
+    
+
+    /* test */
+    border: 1px solid red;
+    flex-grow: 1;
+}
 
 /* section planning */
 
@@ -81,7 +112,7 @@ nav{
     margin-top: 20px;
 
     /* test */
-    height: 500px;
+    height: 125px;
 }
 
 /* section working with us */
@@ -155,11 +186,8 @@ footer{
 
 /* responsive */
 
-@media screen and (min-width: 576px){
-    body{
-        background-color: red;
-    }
-
+@media screen and (min-width: 768px){
+   
     .container-cards{
         flex-direction: row;
         flex-wrap: wrap;
@@ -173,6 +201,20 @@ footer{
     .card.large {
         width: calc(100% / 3 * 2 - 12px);
 
+    }
+    .card-left{
+        width: 50%;
+
+    }
+    
+    .card-right{
+        width: 50%;
+    
+       
+    }
+    .card.large{
+        display: flex;
+        flex-direction: row;
     }
 
     .container-tiles{
@@ -198,6 +240,45 @@ footer{
         
     }
 
+    
+}
+
+@media screen and (min-width: 992px) {
+
+    
+    .container-planning{
+        display: flex;
+        flex-direction: row;
+            
+    }
+    
+    .container-planning .col{
+        width: 50%;
+        
+    }
+
+    .container-tiles{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tile{
+        width: calc(100% / 2 - 20px);
+        flex-grow: 1;
+    }
 
     
 }
+
+@media screen and (min-width: 1200px) {
+
+    
+    
+
+    .tile{
+        width: calc(100% / 3 - 20px);
+        
+    }
+    
+}
+
