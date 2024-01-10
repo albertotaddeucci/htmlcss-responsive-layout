@@ -412,14 +412,73 @@ nav{
     text-align: center;
 
     background-color: #9792e4;
+    color: white;
 }
+
+.container-pricing span:nth-of-type(1){
+    text-transform: uppercase;   
+    
+}
+
+.container-pricing h2{
+    padding-block: 20px;
+}
+
+.container-pricing span:nth-of-type(2){
+    color: #fdc15f ;
+    font-weight: 700;
+    font-size: 3em;
+
+}
+
+.container-pricing p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.container-pricing .button{
+    color: #9792e4;
+    padding: 14px 50px;
+    
+}
+
+.container-pricing div{
+    margin-block: 40px 30px ;
+
+    font-size: 0.8em;
+}
+
+.container-pricing div a{
+    
+    color: white;
+    text-decoration: underline;
+}
+
+
 
 
 /* footer */
 
 footer{
+    padding-block: 30px;
     text-align: center;
     background-color: #333333 ;
+    color: white;
+}
+
+.container-footer{
+    margin-inline: auto ;
+    max-width: 50ch;
+}
+
+footer p:nth-of-type(2){
+    margin-top: 50px;
+}
+
+footer p:nth-of-type(2) a{
+    color: #9792e4;
+    text-decoration: underline;
 }
 
 
@@ -511,6 +570,22 @@ footer{
         width: 40%;
         
         
+    }
+
+    /* section pricing */
+
+    .container-pricing p{
+        margin-inline: auto;
+        width: 50ch;
+    }
+
+    .container-pricing h2{
+        font-size: 36px;
+    }
+
+    .container-pricing span:nth-of-type(2){
+        font-size: 66px;
+    
     }
 
     
