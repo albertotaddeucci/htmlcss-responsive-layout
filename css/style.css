@@ -1,3 +1,5 @@
+/* reset */
+
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +20,9 @@ p{
 
 img{
     width: 100%;
-    display: block;}
+    display: block;
+}
+
 /* utility class */
 
 .padding-sides{
@@ -56,6 +60,9 @@ img{
     background-color: #9792e4;
 }
 
+.letter-spacing{
+    letter-spacing: 2px;
+}
 
 
 /* navbar */
@@ -283,7 +290,7 @@ nav{
 /* section working with us */
 
 #with-us{
-    padding-block: 20px;
+    padding-block: 45px;
 
     text-align: center;
 
@@ -343,7 +350,7 @@ nav{
 
 /* section about us */
 #about-us{
-    padding-block: 20px;
+    padding-block: 70px;
 }
 
 .container-about-us{
@@ -353,7 +360,7 @@ nav{
 
 
 .col-text h2{
-    padding-block: 30px;
+    padding-bottom: 30px;
     font-size: 3em;
     color: #9792e4;
     
@@ -407,7 +414,7 @@ nav{
 /* section pricing */
 
 #pricing{
-    padding-block: 30px;
+    padding-block: 50px;
 
     text-align: center;
 
@@ -469,7 +476,7 @@ footer{
 
 .container-footer{
     margin-inline: auto ;
-    max-width: 50ch;
+    max-width: 60ch;
 }
 
 footer p:nth-of-type(2){
@@ -619,7 +626,7 @@ footer p:nth-of-type(2) a{
     /* section card - tiles expand */
 
     .card.large {
-        /* width: calc(100% / 3 * 2 - 20px); */
+        
         width: calc(100% / 3 * 2 - 20px);
 
         display: flex;
@@ -672,9 +679,18 @@ footer p:nth-of-type(2) a{
 
     .testimonial{
         
-        gap: 60px ;        
+        gap: 60px ;              
         
-        
+    }
+
+    #testimonials .wrapper > p{
+        margin-inline: auto;
+        max-width: 90ch;
+        font-size: 20px;
+    }
+
+    #testimonials .wrapper > span{
+        font-size: 40px;
     }
 
     /* section with us */
@@ -689,11 +705,11 @@ footer p:nth-of-type(2) a{
         
     }
 
+    /* section about us */
 
-    .container-about-us{
-        
- 
-        padding: 50px;
+    .container-about-us {
+        padding: 0px 30px;
+        max-width: 1050px;
     }
 
     .col-text{
@@ -710,10 +726,4 @@ footer p:nth-of-type(2) a{
     
 }
 
-@media screen and (min-width: 1200px) {
-    
-
-    
-    
-}
 
