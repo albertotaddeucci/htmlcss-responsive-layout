@@ -489,7 +489,7 @@ footer{
     }
 
     .tile{
-        width: calc(100% / 2 - 30px);
+        width: calc(100% / 2 - 30px / 2);
     }
 
     /* section about us */
@@ -503,12 +503,12 @@ footer{
     }
     
     .col-text{
-        width: 75%;
+        width: 60%;
 
     }
     
     .col-img{
-        width: 25%;
+        width: 40%;
         
         
     }
@@ -610,7 +610,7 @@ footer{
     }
 
     .tile{
-        width: calc(100% / 3 - 30px);
+        width: calc(100% / 3 - 30px / 3 * 2 );
         
     }
 
@@ -619,7 +619,19 @@ footer{
         
  
         padding: 50px;
-     }
+    }
+
+    .col-text{
+        width: 75%;
+
+    }
+    
+    .col-img{
+        width: 25%;
+        
+        
+    }
+
     
 }
 
