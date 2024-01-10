@@ -26,7 +26,7 @@ img{
 }
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1140px;
     margin-inline: auto;
 }
 
@@ -206,22 +206,78 @@ nav{
 }
 
 
-/* section partners */
+/* section testimonials */
 
-#partners{
+#testimonials{
     padding-block: 40px;
     text-align: center;
 }
 
-.partner{
-    background-color: #9792e4;
+#testimonials h2{
+    margin-bottom: 20px;
 
-    margin-top: 20px;
-
-    /* test */
-    height: 125px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
 }
 
+#testimonials .wrapper > span{
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 2em;
+    color: #9792e4;
+}
+
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 30px;
+    
+    padding: 30px 16px ;
+    border-radius: 50px;
+    
+    color: white;
+    
+    background-color: #9792e4;
+    
+}
+.testimonial-img{
+    position: relative;
+    overflow: hidden;
+
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 24px;
+    
+    border-radius: 50%;
+    
+}
+
+.testimonial img{
+    width: auto;
+    height: 100%;
+    margin-left:-50px ;
+}
+
+.testimonial-text p{
+    margin-bottom:35px;
+}
+
+.testimonial-text span{
+    font-size: 1.5em;
+}
+
+
+.testimonial-name{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* section working with us */
 
 #with-us{
@@ -291,6 +347,14 @@ footer{
 }
 
 
+
+
+
+
+
+
+
+
 /* responsive */
 
 @media screen and (min-width: 768px){
@@ -323,6 +387,23 @@ footer{
         width: 50%;    
        
     }
+
+    /* section testimonials */
+
+    .testimonial{
+        
+        flex-direction: row;
+        gap: 30px ;
+        
+        padding: 30px 50px 30px 16px ;
+        
+    }
+    
+    .testimonial-text{
+        width: 70%;
+        text-align: start;
+    }
+    
     
 
     .container-tiles{
@@ -417,7 +498,24 @@ footer{
 
         
     }
-    .container-planning .col-right img{
+
+    .wrapper.container-planning{
+        max-width: 880px;
+    }
+
+    .container-planning .col-right img{        
+        width: 60%;
+        margin: auto;
+    }
+    
+   
+    /* section testimonials */
+
+    .testimonial{
+        
+        gap: 60px ;
+        
+        
         
     }
 
@@ -427,22 +525,17 @@ footer{
     }
 
     .tile{
-        width: calc(100% / 2 - 20px);
-        flex-grow: 1;
+        width: calc(100% / 3 - 20px);
+        
     }
 
     
 }
 
 @media screen and (min-width: 1200px) {
-
-    
     
 
-    .tile{
-        width: calc(100% / 3 - 20px);
-        
-    }
+    
     
 }
 
